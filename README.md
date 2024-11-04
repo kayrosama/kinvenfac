@@ -1,6 +1,12 @@
-# kinvenfac
-Sistema de control para courier paqueteria y cajas.
-Este proyecto inicia con la necesidad de controlar las operaciones diarias en las empresas.
+# KMKZ
+(NOTA: Aun en construccion)
+Sistema de control enfocado al sector de comercio informal.
+Este proyecto inicia con la necesidad de crear controles para empresas en formacion.
+
+Se tiene contemplado la implementacion de los modulos:
+- Inventario
+- Track de Paquetes / Cajas
+- Arendamiento de Servicios
 
 # Pasos para instalar el Sistema
 
@@ -26,10 +32,8 @@ apt-get install -f -y python3-pip python3-venv
 mkdir /path/proyecto
 cd /path/proyecto
 .
-python3 -m venv venv
-source venv/bin/activate
-.
-python3 -m pip install reflex
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
 ##### 3) Instalar librerias del proyecto
