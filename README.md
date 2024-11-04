@@ -34,6 +34,19 @@ cd /path/proyecto
 .
 python3 -m venv .venv
 source .venv/bin/activate
+.
+python3 -m pip install pip --upgrade 
+python3 -m pip install Django==5.1.2
+.
+django-admin startproject core .
+.
+python3 manage.py runserver
+http://127.0.0.1:8000/
+CONTROL-C
+python3 manage.py migrate
+python3 manage.py createsuperuser
+python3 manage.py startapp apis
+.
 ```
 
 ##### 3) Instalar librerias del proyecto
@@ -48,18 +61,21 @@ Linux debes instalar las [librerias](https://doc.courtbouillon.org/weasyprint/st
 ##### 5) Inicializar el proyecto
 
 ```bash
-reflex init
+python3 manage.py runserver
 ```
 
 ##### 6) Iniciar la app del proyecto
 
 ```bash
-reflex run 
+python3 manage.py runserver
 ```
 
 ##### 7) Iniciar sesión en el sistema
 
 ```bash
+
+http://127.0.0.1:8000/admin
+.
 username: admin
 password: IchiBan
 ```
